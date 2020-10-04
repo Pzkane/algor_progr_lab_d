@@ -1,0 +1,42 @@
+Pâvels Þuravïovs
+pz20014
+
+=== A8 =======================================
+
+Izveidot programmu gan C++, gan Python. 
+Ievadot loìiski nepareizus datus, programmai jâizdod atbilstoðs paziòojums. Jâbût iespçjai programmu izpildît atkârtoti. Atrâdot programmu, jâatrâda
+a) programmas teksts,  b) testa piemçri,  c) programma darbîbâ.
+Precîzâkas prasîbas sk. Laboratorijas darbu noteikumos.
+
+A8. Dots naturâls skaitlis n. Izdrukât tos skaitïa n reizinâtâjus, kuri ir kâda naturâla skaitïa kvadrâti.
+
+
+=== B25 =======================================
+
+Izveidot programmu gan C++, gan Python, obligâti izmantojot norâdîtâs vai kâdas citas funkcijas. 
+Prasîbas tâdas paðas kâ iepriekðçjâ uzdevumâ, precîzâk sk. Laboratorijas darbu noteikumos.
+
+B25. Sastâdît programmu, kura saskaita un atòem racionâlus skaitïus, racionâlos skaitïus uzdodot kâ divu veselu  skaitïu pâri (1/3 tiek uzdota kâ divi skaitïi 1 un 3). Rezultâtam jâbût kâ nesaîsinâmam daïskaitlim. Uzrakstît funkciju, kas  saskaita 2 racionâlus skaitïus un funkciju, kas pârveido racionâlu skaitli par nesaîsinâmu daïskaitli.
+
+
+=== C12 =======================================
+
+Izveidot programmu valodâ C++, obligâti izmantojot norâdîtâs vai kâdas citas funkcijas. 
+Prasîbas tâdas paðas kâ iepriekðçjâ uzdevumâ, precîzâk sk. Laboratorijas darbu noteikumos.
+
+C12. Doti naturâls skaitlis n un veseli skaitïi a(1), a(2), ... a(n). Neveicot visa masîva sakârtoðanu, atrast treðo mazâko no ðiem skaitïiem.
+
+
+=== D10 =======================================
+
+Izveidot programmu valodâ C++, izmantojot objektorientçtâs programmçðanas lîdzekïus 
+un strukturçjot programmu vismaz trîs failos.
+Klases hederi obligâti novietot atseviðíâ hedera failâ (program.h). 
+Visas metodes realizçt ârpus hedera faila – speciâlâ C++ failâ (program.cpp). 
+Funkcija main ievietojama vçl citâ C++ failâ (main.cpp). 
+Klases dati pçc noklusçðanas ir slçpti (private), bet metodes atklâtas (public). 
+Ðîs programmas ietvaros NAV obligâti jânodroðina tâda lietotâja saskarne, 
+kâda tika prasîta iepriekðçjos trîs uzdevumos (main funkciju drîkst “cieti” iekodçt). 
+Citas prasîbas sk. Laboratorijas darbu noteikumos.
+
+D10. "Izveidot klasi ""Skaitïu masîvs"", kurâ glabâjas masîvs ar skaitïiem (double) garumâ 5. Klasei izveidot ðâdas metodes: (1) konstruktors, kas aizpilda masîvu ar 0, (2) destruktors, kurð paziòo par objekta likvidçðanu, (3) metode ""Mainît"" ar mainâmâ elementa indeksu (0..4) un jauno vçrtîbu, kas izmaina mainâmâ masîva elementa vçrtîbu, (4) metode ""Summa"", kas atgrieþ elementu summu, (5) metode ""Vidçjâ vçrtîba"", kas atgrieþ elementu vidçjo aritmçtisko vçrtîbu, (6) metode ""Drukât"", kas izdrukâ elementu vçrtîbas, (7) metode ""Inicializçt"", kas uzstâda uz 0 visas vçrtîbas."
