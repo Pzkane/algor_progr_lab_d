@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601624970 source:c:\users\students\desktop\pz20014\a8\main.cpp
+	<iostream>
+	<cmath>
+	<limits>
+
