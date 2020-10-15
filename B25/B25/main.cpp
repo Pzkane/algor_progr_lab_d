@@ -16,6 +16,38 @@
 
     *************************************************************
 
+    TESTA PIEMĒRI:
+
+    1. Racionālu skaitļa skaitu noteikšana
+
+    Ievads   |          Vēlamā reakcija         |    Rezultāts
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+    abcdg    | Paziņojums par nepareizo ievadi  | Programma izvada "Incorrect input!"
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+        0    | Paziņojums par nepareizo skaitļa | At least 2 numbers are required!
+             | skaitu                           |
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+        -8   | Paziņojums par nepareizo skaitļa | At least 2 numbers are required!
+             | skaitu                           |
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+        1    | Paziņojums par nepareizo skaitļa | At least 2 numbers are required!
+             | skaitu                           |
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+        2    | Programma piedāva ievadīt 2      | Programma klausās lietotāju ievadi
+             | racionālus skaitļus              |
+
+    2. Racionāla skaitļa ievads
+
+    Ievads   |          Vēlamā reakcija         |    Rezultāts
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+        a    | Nav iespējas ievadīt             | CLI nereģistrē 'a'
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+        -    | Ir iespēja ievadīt               | Ir iespēja ievadīt,
+             |                                  | bet tikai skaitītāja vietā
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+        5    | Veiksmīga ievade                 | CLI reģistrē ciparu 5
+    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––
+     <space> | Pāriet uz nākamo darbību         | CLI pāriet uz nākamo darbību
 
 */
 #include <iostream>
@@ -78,7 +110,7 @@ int main ()
                 operators[i] = c_op;
             }
         }
-        std::cout << " = ";
+        std::cout << " = (";
 
         // Get common denominator
         int denominator_multipl = 1;
@@ -97,7 +129,7 @@ int main ()
                 std::cout << operators[i];
         }
 
-        std::cout << "/" << denominator_multipl;
+        std::cout << ")/" << denominator_multipl;
 
         // Calculate numerators' sum based on operators
         int numerators_sum = new_numerators[0];

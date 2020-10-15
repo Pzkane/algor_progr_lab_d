@@ -14,6 +14,25 @@
 #    kas  saskaita 2 racionālus skaitļus un funkciju, kas pārveido racionālu skaitli par nesaīsināmu daļskaitli.
 #    
 #    *************************************************************
+#
+#
+#    TESTA PIEMĒRI:
+#
+#     Ievads  |          Vēlamā reakcija         |            Rezultāts                |         Piezīmes
+#    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
+#    abcdg    | Paziņojums par nepareizo ievadi  | Programma izvada "invalid literal"  |
+#    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
+#        0    | Paziņojums par dalīšanu ar 0     | Programma izvada "denominator cannot| Skaitlis tiek ievadīts 
+#             |                                  | be zero"                            | saucējā
+#    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
+#        -8   | Paziņojums par nepareizu skaitļu | Programma izvada "number is less    | Skaitlis tiek ievadīts
+#             |                                  | than zero"                          | saucējā
+#    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
+#        k    | Paziņojums par nepareizu darbību | Programma izvada "CLI supports only | Burts tiek ievadīts
+#             |                                  | these operations: +, -              | darbības izvēles laikā
+#    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
+#     1, 2, 3,| Atbilde: 1/1                     | Programma izvada 1/1                | Izveidotie rac. skaitl.:
+#     6, +    |                                  |                                     | 1/2 + 3/6
 
 from functools import reduce
 
@@ -47,7 +66,12 @@ def main():
                 fractions.append(int(n))
                 fractions.append(int(m))
 
-            op = input("Operation type (+/-): ")
+            while True:
+                op = input("Operation type (+/-): ")
+                if not (op == "+" or op == "-"):
+                    print("CLI supports only these operations: +, -")
+                else:
+                    break;
 
             if quit:
                 return
@@ -188,8 +212,8 @@ def calculate_fractions(fractions: list, operation: str):
     numerators = list()
     denominators = list()
     denominator_multpl = 1
-    for val in fractions:
-        if val % 2:
+    for (i, val) in enumerate(fractions):
+        if not i % 2:
             numerators.append(val)
         else:
             if val < 0:
@@ -201,7 +225,7 @@ def calculate_fractions(fractions: list, operation: str):
     new_numerators = list()
     arr_index = 0
     for (i, val) in enumerate(fractions):
-        if val % 2:
+        if not i % 2:
             if val == 0:
                 raise ZeroDivisionError
 
