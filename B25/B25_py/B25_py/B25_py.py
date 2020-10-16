@@ -7,7 +7,7 @@
 #    Vārds, Uzvārds: Pāvels Žuravļovs
 #    Apliec. num.: pz20014
 #    Uzdevuma veikšanas datums: 2020/10/01
-#    Valoda: Python
+#    Valoda: Python 3.8.5
 #
 #    B25. Sastādīt programmu, kura saskaita un atņem racionālus skaitļus, racionālos skaitļus uzdodot kā divu veselu  skaitļu pāri
 #    (1/3 tiek uzdota kā divi skaitļi 1 un 3). Rezultātam jābūt kā nesaīsināmam daļskaitlim. Uzrakstīt funkciju,
@@ -27,6 +27,9 @@
 #    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
 #        -8   | Paziņojums par nepareizu skaitļu | Programma izvada "number is less    | Skaitlis tiek ievadīts
 #             |                                  | than zero"                          | saucējā
+#    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
+#       4.5   | Paziņojums par nepareizo ievadi  | Programma izvada "invalid literal"  | 
+#             |                                  |                                     | 
 #    –––––––––+––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––––––––––––––+–––––––––––––––––––––––––
 #        k    | Paziņojums par nepareizu darbību | Programma izvada "CLI supports only | Burts tiek ievadīts
 #             |                                  | these operations: +, -              | darbības izvēles laikā
