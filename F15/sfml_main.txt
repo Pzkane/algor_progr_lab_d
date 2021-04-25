@@ -1,0 +1,107 @@
+#include <SFML/Graphics.hpp>
+#include <iostream> #include <iomanip>
+#include <thread>
+#include <functional>
+
+struct SharedStruct {
+    unsigned int counter = 0;
+};
+
+void func()
+{
+    int iter = -1;
+    while (true)
+        std::cout << "New count: " << ++iter << std::endl;
+}
+
+template <typename ... ArgsT>
+void wait(int wait_seconds, auto functor, ArgsT... args)
+{
+    sf::Clock clock;
+    do {
+        sf::Time elapsed = clock.getElapsedTime();
+        if (elapsed.asSeconds() - (int) elapsed.asSeconds() == 0 && (int) elapsed.asSeconds() % wait_seconds == 0)
+            functor(elapsed.asSeconds(), args...);
+    } while (true);
+}
+
+void print_elapsed(int seconds, SharedStruct * ss)
+{
+    std::cout<<seconds<<std::endl;
+    ++ss->counter;
+}
+
+void print_debounce(int wait_seconds, SharedStruct * ss)
+{
+    wait(wait_seconds, print_elapsed, ss);
+}
+
+int mswpr(SharedStruct * ss)
+{
+    // Create the main window
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Another window");
+    // Load a sprite to display
+    sf::Texture texture;
+    if (!texture.loadFromFile("./Untitled.png"))
+        return EXIT_FAILURE;
+    sf::Sprite sprite(texture);
+    // Create a graphical text to display
+    sf::Font font;
+    if (!font.loadFromFile("C:\\Windows\\Fonts\\Arial.ttf"))
+        return EXIT_FAILURE;
+
+    char buffer [50];
+
+    // Start the game loop
+    while (window.isOpen())
+    {
+        sprintf(buffer, "Hello, SFML! Count is: %u", ss->counter);
+        sf::Text text(buffer, font, 50);
+        // Process events
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            // Close window: exit
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+        // Clear screen
+        window.clear();
+        // Draw the sprite
+        window.draw(sprite);
+        // Draw the string
+        window.draw(text);
+        // Update the window
+        window.display();
+    }
+    return EXIT_SUCCESS;
+}
+
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Test project on SFML!");
+    sf::CircleShape shape(300.f);
+    shape.setFillColor(sf::Color::Green);
+
+    // create instance of object that is 'global' (shared between) functions and which
+    //   value can be modified
+    SharedStruct * ss = new SharedStruct;
+    std::thread t_std_elapsed(&print_debounce, 1, ss);
+    std::thread t_std_second_window(mswpr, ss);
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
+
+    return 0;
+}

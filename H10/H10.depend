@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1619048416 source:c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\h10\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<map>
+

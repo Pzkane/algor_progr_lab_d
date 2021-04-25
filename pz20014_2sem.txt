@@ -1,0 +1,56 @@
+Pâvels Þuravïovs
+pz20014
+
+
+
+=== F15 =======================================
+
+Izveidot programmu valodâ C++, kas apstrâdâ teksta failu secîgâ reþîmâ.
+Dati no faila jânolasa pa vienai rindiòai. Nedrîkst dublçt visa faila saturu operatîvajâ atmiòâ.
+Sîkâkas prasîbas sk. Laboratorijas darbu noteikumos.
+
+F15. Dots teksta fails, kurâ atrodas sintaktiski pareizs C++ programmas teksts. Uzrakstît programmu, kura saskaita, cik daþâdu bibliotçku (#include) iekïauts dotajâ programmâ. Drîkst uzskatît, ka programmas tekstâ nav komentâru un ka attiecîgie simboli neparâdîsies teksta literâïos.
+
+
+=== G23 =======================================
+
+Izveidot divas programmas valodâ C++, kas strâdâ ar vçrtîbu virkni divos daþâdos veidos:
+  1) to realizçjot kâ vienvirziena saistîto sarakstu, izmantojot dinamiskas datu struktûras,
+  2) izmantojot STL::list konteineru.
+Abâs realizâcijâs ir jâizveido prasîtâ specifiskâ vçrtîbu virknes apstrâdes funkcija un jânodemonstrç tâ darbîbâ,
+cita starpâ parâdot gan sâkotnçjâs, gan rezultçjoðâs vçrtîbas. 
+Abâs programmâs:   
+  a) jâbût iespçjai ievadît saraksta elementus (izveidot patvaïîgu sarakstu),
+  b) jâpielieto uzrakstîtâ funkcija sarakstam,  
+  c) jâizdrukâ saraksts pçc funkcijas darbîbas.  
+  d) beigâs jâiznîcina saraksts - korekti jâatbrîvo izdalîtâ atmiòa(lietojot delete vai clear).
+Sîkâkas prasîbas sk. Laboratorijas darbu noteikumos.
+
+G23. Uzrakstît funkciju, kas izmet no saraksta tos elementus, kuru vçrtîba lielâka par tam sekojoðâ elementa vçrtîbu.
+
+
+=== H10 =======================================
+
+Izveidot programmu valodâ C++.  Ja programma darbojas ar failu, nedrîkst dublçt visa faila saturu operatîvajâ atmiòâ.
+Ar faila komponenti tiek saprasts fiksçta garuma ieraksts. Sîkâkâs prasîbas sk. Laboratorijas darbu noteikumos.
+
+H10. Doti divi binâri faili f1 un f2, kuru komponentes ir ieraksti ar struktûru: atslçga (int), vârds (nepârsniedz 30 simbolus). Failu komponentes sakârtotas pçc atslçgâm dilstoðâ secîbâ. Uzrakstît programmu, kas apvieno failus f1 un f2 failâ f3 tâ, lai arî f3 komponentes bûtu dilstoðâ secîbâ (failos nedrîkst parâdîties divas komponentes ar vienâdu atslçgu vçrtîbu). Programmu veidot tâ, lai pilns faila saturs netiktu ielâdçts operatîvajâ atmiòâ. Uzrakstît arî palîgprogrammas, kas ïauj izveidot failus f1 un f2 un izdrukâ failu saturu.
+
+
+=== GG =========================================
+
+GG – STL list un saistîtais saraksts ar izòçmumsituâciju apstrâdi un vienîbtestçðanu**.
+
+* atrisinât uzdevumu G divos veidos:
+  a) izmantojot dinamiskas datu struktûras (saistîto sarakstu vtml.),
+  b) izmantojot STL::list konteineru.
+
+** tas pats uzdevums, kas G, bet tâ risinâjums (a) jâpapildina ar divâm lietâm:
+  1) vismaz viena no datu pârbaudçm jârealizç, izmantojot izòçmumsituâciju apstrâdes (exception handling) mehânismu,
+  2) vismaz viena funkcija (vçlams, galvenâ) ir jânotestç, izmantojot vienîbtestçðanu, kur attiecîgâ funkcija bûtu jâpârbauda uz vismaz trîs daþâdiem nosacîjumiem;
+     ðim nolûkam, kâ minimums, ir nepiecieðams:
+	      (1) ðo funkciju iznest ârâ citâ failâ (nekâ funkcija main),
+	      (2) izveidot otru projektu speciâli ðîs funkcijâs testçðanai (tâtad, kopâ bûs divi projekti, parastais, kas izmantos funkciju, otrais, kas testçs).
+
+Papildus norâde: ðâdam vienîbtestçðanas projektam daïçji atbilst iepriekðçjâ semestra pçdçjais laboratorijas darbs (ar klasçm) ar cieti iekodçtu main funkciju.
+

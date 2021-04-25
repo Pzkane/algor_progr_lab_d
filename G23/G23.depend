@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1617209760 source:c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\g23\main.cpp
+	<iostream>
+	<list>
+	<string>
+	<limits>
+	<cstdlib>
+	<ctime>
+	"./include/linked_list.h"
+
+1617219570 c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\g23\include\linked_list.h
+
+1616373885 c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\g23\linked_list.h
+
