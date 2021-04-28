@@ -5,3 +5,11 @@
 	<vector>
 	<map>
 
+1619555240 source:c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\algor_progr_lab_d\h10\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<map>
+	<time.h>
+	<random>
+
