@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1620475724 source:c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\algor_progr_lab_d\gg\main.cpp
+	<iomanip>
+	"./utils.h"
+
+1620475507 c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\algor_progr_lab_d\gg\utils.h
+	<iostream>
+	<list>
+	<string>
+	<limits>
+	<cstdlib>
+	"./linked_list.h"
+
+1620475960 c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\algor_progr_lab_d\gg\linked_list.h
+
+1620476114 source:c:\users\pavel\documents\lu_materials\algoritmi un programmesana\md\algor_progr_lab_d\gg\utils.cpp
+	<ctime>
+	"./utils.h"
+
